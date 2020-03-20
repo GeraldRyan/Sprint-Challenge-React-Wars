@@ -14,7 +14,7 @@ const App = () =>
   {
     axios.get('https://swapi.co/api/people/')
     .then(response =>
-      setPeople(response.data.results)) // this is the side effect is from the axios get function? 
+      setPeople(response.data.results[0])) // this is the side effect is from the axios get function? 
     .catch("You caught me kid")
     // That's it for the useEffect/Get function, just to produce the object needed
   },[])
