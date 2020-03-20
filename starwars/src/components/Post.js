@@ -4,15 +4,19 @@ import './Post.css'
 
 export default function Post(e)
 {
-
+  let gender = ''
+if (e.char.gender ==="n/a"){
+  gender = "droid"
+}
+else {gender = e.char.gender}
   return (
     <div>
       <Card>
         {/* <CardImg top width="100%" src={e.char.url} alt="Card image cap" /> */}
         <CardBody>
           <CardTitle>{e.char.name}</CardTitle>
-          <CardSubtitle>{e.char.gender}</CardSubtitle>
-          <CardText>        {`Height: ${e.char.height} `}
+          <CardSubtitle>{gender}</CardSubtitle>
+          <CardText>{`Height: ${e.char.height} `}
         {`Mass: ${e.char.mass} `}</CardText>
         </CardBody>
       </Card>
