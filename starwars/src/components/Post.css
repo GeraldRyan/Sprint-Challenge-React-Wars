@@ -1,0 +1,11 @@
+.card{
+  background-color: white;
+  width:75%;
+  margin:auto;
+  opacity: 50%;
+}
+
+.card-title{
+  font-weight: bold;
+  font-size: 2rem;
+}
