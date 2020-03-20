@@ -7,6 +7,7 @@ export default function Post(e)
   let gender = ''
 if (e.char.gender ==="n/a"){
   gender = "droid"
+  console.log(e)
 }
 else {gender = e.char.gender}
   return (
