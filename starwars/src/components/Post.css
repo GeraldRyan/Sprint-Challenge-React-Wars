@@ -1,8 +1,10 @@
 .card{
   background-color: white;
   width:75%;
-  margin:auto;
+  margin:2rem auto;
   opacity: 50%;
+  border: solid 1px gold;
+  
 }
 
 .card-title{
