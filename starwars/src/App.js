@@ -15,6 +15,7 @@ const App = () =>
     axios.get('https://swapi.co/api/people/')
     .then(response =>{
       response.data.results.unshift({name: "Jar Jar Binks", gender: 'male', height: 150, mass:150})
+      response.data.results.push({name: "Captain Picard", gender: 'male', height: 150, mass:150})
       setPeople(response.data.results)}) // this is the side effect is from the axios get function? 
     .catch("You caught me kid")
     // That's it for the useEffect/Get function, just to produce the object needed
