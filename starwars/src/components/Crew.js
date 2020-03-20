@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import axios from 'axios'
 
 
 export default function Crew(props)
 {
-  console.log(props.data.results)
+  console.log(props.data)
+  // console.log(props.data.results)
   return (
-    < div > {props.data}</div >
+    < div >
+     {/* {props.data.starWarsChars} */}
+    </div >
   )
 }
 
