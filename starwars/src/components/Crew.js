@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 
 
-export default function Crew()
+export default function Crew(props)
 {
+  console.log(props.data)
   return (
-    < div > Hello World</div >
+    < div > hello world</div >
   )
 }
 
