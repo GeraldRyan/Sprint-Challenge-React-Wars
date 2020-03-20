@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios'
+import Crew from './components/Crew'
 
 const App = () =>
 {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
-  const [people, setPeople] = useState("droids")
+  const [people, setPeople] = useState({})
 
   useEffect(() =>
   {
     axios.get('http https://swapi.co/api/people/')
     .then(response =>
-      setPeople(response))
+      setPeople(response)) // this is the side effect is from the axios get function? 
     .catch("You caught me kid")
-    // do what's in here
+    // That's it for the useEffect/Get function, just to produce the object needed
   },[])
 
 
@@ -26,6 +27,7 @@ const App = () =>
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Crew />
     </div>
   );
 }
