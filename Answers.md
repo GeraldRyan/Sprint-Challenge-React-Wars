@@ -16,4 +16,4 @@
 
 1. What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-# 
+# A side effect is anything that effest of something outside of the function being called- for example changing variables. Side effects by definition never occur in pure functions, which take in args and return data but not change anything outside the function itself. Pushing to an array is an example, or changing state with a closure such as React.useState (which is closure based in its implementation). 

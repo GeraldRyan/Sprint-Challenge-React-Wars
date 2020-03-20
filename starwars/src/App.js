@@ -11,10 +11,12 @@ const App = () =>
 
   useEffect(() =>
   {
+    axios.get('http https://swapi.co/api/people/')
+    .then(response =>
+      setPeople(response))
+    .catch("You caught me kid")
     // do what's in here
-  }
-
-  )
+  },[])
 
 
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
